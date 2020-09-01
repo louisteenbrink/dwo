@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dwo
+    environment:
+      - APPLICATION_PORT=3310
+      - DATABASE_URL=postgres://forest:secret@host.docker.internal:5482/users
+      - DATABASE_SCHEMA=public
+      - DATABASE_SSL=false
+      - FOREST_AUTH_SECRET=73f2db01e1672341786f0c34019ccb8095fc4a90c011388657f3ee4685fc0c515dfd22388d561514c4d15e2a223abf65
+      - FOREST_ENV_SECRET=a331ba310a3827d73c8e6cbd3970d7e93fdbae14cf8f1c141ca4e248ab6b53f4
+    ports:
+      - "3310:3310"
+    volumes:
+      - ./:/usr/src/app
