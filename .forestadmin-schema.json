@@ -881,7 +881,16 @@
       "validations": []
     }],
     "segments": [],
-    "actions": []
+    "actions": [{
+      "name": "approve",
+      "type": "bulk",
+      "baseUrl": null,
+      "endpoint": "/forest/actions/approve",
+      "httpMethod": "POST",
+      "redirect": null,
+      "download": false,
+      "fields": []
+    }]
   }],
   "meta": {
     "database_type": "postgres",
@@ -889,8 +898,8 @@
     "liana_version": "6.3.8",
     "engine": "nodejs",
     "engine_version": "12.8.0",
-    "framework": "express",
-    "framework_version": "~4.16.3",
+    "framework": "other",
+    "framework_version": null,
     "orm_version": "5.15.2"
   }
 }
