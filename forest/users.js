@@ -7,7 +7,8 @@ const { collection } = require('forest-express-sequelize');
 // - Smart segments: https://docs.forestadmin.com/documentation/reference-guide/segments/smart-segments
 collection('users', {
   actions: [{
-    name: 'approve'
+    name: 'Synchroniser les véhicules',
+    type: 'global',
   }],
   fields: [],
   segments: [],

@@ -882,10 +882,10 @@
     }],
     "segments": [],
     "actions": [{
-      "name": "approve",
-      "type": "bulk",
+      "name": "Synchroniser les véhicules",
+      "type": "global",
       "baseUrl": null,
-      "endpoint": "/forest/actions/approve",
+      "endpoint": "/forest/actions/synchroniser-les-vehicules",
       "httpMethod": "POST",
       "redirect": null,
       "download": false,
